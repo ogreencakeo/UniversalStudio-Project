@@ -94,7 +94,7 @@
     </li>
   </ul>
   <br />
-  <img style="width : 850px; height : 500px" src ="https://raw.githubusercontent.com/ogreencakeo/UniversalStudio-Project/main/universalStudio/cjm-universal-project/page.png" />
+  <img style="width : 800px; height : 450px" src ="https://raw.githubusercontent.com/ogreencakeo/UniversalStudio-Project/main/universalStudio/cjm-universal-project/page.png" />
   <br />
 </div>
 <br />
