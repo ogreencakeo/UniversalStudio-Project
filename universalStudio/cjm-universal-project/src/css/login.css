@@ -1,0 +1,77 @@
+.login-page-wrap{
+    max-width: 1200px;
+    padding: 20px;
+    margin: 150px auto;
+}
+.login-bx{
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.login-bx h1{
+    font-size: 2.5rem;
+    font-family: 'Jua';
+    margin-bottom: 30px;
+}
+.login-bx ul li input{
+    padding: 20px;
+    width: 320px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* 아이디 비번 찾기 */
+.find-id-password{
+    text-align: end;
+}
+.find-id-password span{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Jua';
+    cursor: pointer;
+}
+
+
+/* 로그인 버튼 */
+.login-button{
+    
+}
+.login-button button{
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+    padding: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #073888ff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.login-button button:first-child{
+    background-color: #073888ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+.login-button button:last-child{
+    background-color: #fff;
+    color: #073888ff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width : 1020px) {
+    .login-page-wrap{
+        margin: 20px auto;
+    }
+
+}
+@media screen and (max-width : 430px) {
+    .login-bx ul li input{
+        width: 200px;
+    }
+}

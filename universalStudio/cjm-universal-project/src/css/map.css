@@ -1,0 +1,67 @@
+
+/* 레스토랑 위치 */
+.map_wrap{
+    max-width: 100%;
+    margin: 80px;
+}
+.map_bx{
+    max-width: 50vw;
+    /* outline: 1px solid red; */
+    /* height: 500px; */
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.map_bx>h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Jua';
+    margin-bottom: 30px;
+}
+.map{
+    width: 100%;
+    margin: 0 auto;
+    outline: 1px solid gainsboro;
+    border-radius: 20px;
+    
+}
+.map_img{
+    width: 100%;
+}
+.map_img>img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    aspect-ratio: 16/7;
+    /* margin: 0 auto; */
+}
+
+/* 레스토랑 맵 하단 설명 */
+.map_content{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 10px;
+}
+
+.map_content>div>span{
+    display: block;
+    padding: 5px;
+    color: darkblue;
+}
+.map_content>div>span:first-child{
+    color: #000;
+}
+
+/* 레스토랑 맵 로고 */
+.map_logo{
+    width: 100px;
+}
+.map_logo>img{
+    display: block;
+    width: 100%;
+    aspect-ratio: 2/1;
+}

@@ -1,0 +1,82 @@
+.attraction-detail-wrap{
+    max-width: 100%;
+    margin: 100px auto;
+}
+.attraction-detail-bx {
+    max-width: 1280px;
+    margin: 120px auto 100px;
+}
+
+.attraction-detail-main-img{
+    max-width: 1000px;
+    margin: 70px auto 0;
+}
+.attraction-detail-main-img>img {
+    max-width: 100%;
+    aspect-ratio: 1.1/1;
+    border-radius: 20px;
+}
+
+.attraction-detail-cont {
+    margin-top: 80px;
+}
+
+.attraction-detail-cont > h1 {
+    margin-bottom: 50px;
+}
+
+.attraction-detail-cont h2 {
+    font-size: 2rem;
+    font-family: "Jua";
+    text-align: center;
+}
+.attraction-detail-cont p {
+    font-size: 1.2rem;
+    font-family: 'Jua';
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.detail-split-p{
+    margin: 25px;
+}
+.attraction-logo-img {
+    max-width: 400px;
+    margin: 50px auto;
+}
+.attraction-logo-img>img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
+.goto-attraction{
+    text-align: center;
+}
+
+.goto-attraction button{
+    padding: 10px;
+    background-color: #3144cc;
+    color: #fff;
+    font-family: 'Jua';
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:750px) {
+    .attraction-detail-wrap{
+        margin: 80px auto;
+    }
+    .attraction-detail-bx{
+        margin: 80px auto;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .goto-attraction button{
+        margin-bottom: 15px;
+    }
+}

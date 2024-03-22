@@ -1,0 +1,142 @@
+/* 광고 */
+.goods_ad_wrap{
+    max-width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid white;
+}
+.goods_ad_main_img{
+    max-width: 800px;
+    margin: 150px auto 50px;
+}
+.goods_ad_main_img>div{
+    max-width: 450px;
+    margin: 0 auto;
+}
+.goods_ch3{
+    max-width: 200px;
+    margin-bottom: 10px;
+    display: block;
+    animation: goods_ch3_ani 2s linear alternate infinite;
+}
+
+@keyframes goods_ch3_ani {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-30px);
+    }
+}
+.goods_ch4{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods_ad_bx{
+    max-width: 100%;
+}
+
+.goods_ad{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.goods_tit{
+    font-family: 'Gugi';
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.goods_ad_cont{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+.goods_ad_cont>div{
+    flex: 1;
+    padding: 20px;
+}
+
+.goods_img_logo{
+    overflow: hidden;
+}
+.goods_img_logo>img{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    transform: translate(-100%, 50%);
+    opacity: 0;
+    transition: .4s ease-in;
+}
+.goods_img_logo>img.on{
+    opacity: 1;
+    transform:translate(0);
+}
+
+.goods_location{
+    font-size: 1.5rem;
+    font-family: 'Jua';
+    padding: 10px;
+    /* background-color: aliceblue; */
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.goods_product{
+    font-size: 1.2rem;
+    font-family: 'Jua';
+    padding: 10px;
+    display: block;
+}
+
+.goods_sub_cont{
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.goods_cont{
+    font-size: 1.2rem;
+    font-family: 'Jua';
+    padding: 10px;
+}
+
+
+/* 숍의 위치 */
+.goods_shop_map{
+    /* max-width: 800px; */
+    margin: 30px auto 70px;
+}
+.goods_shop_map>h1{
+    padding: 15px;
+    margin-bottom: 20px;
+    font-family: 'Gugi';
+    font-size: 2rem;
+}
+.shop_map{
+    max-width: 100%;
+    border-radius: 20px;
+}
+.shop_map>img{
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    width: 100%;
+}
+
+.faFaceSmileWink{
+    font-size: 7rem;
+    display: block; 
+    text-align: center;
+    animation: faFaceSmileWink-ani 5s linear infinite;
+}
+
+@keyframes faFaceSmileWink-ani{
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}

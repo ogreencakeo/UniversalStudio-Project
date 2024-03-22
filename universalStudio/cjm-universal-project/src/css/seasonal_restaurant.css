@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+/* 레스토랑 */
+.seasonal_restaurant_wrap {
+    max-width: 100%;
+}
+
+.seasonal_restaurant_bx {
+    /* flex-wrap: wrap; */
+    margin: 0 auto 30px;
+}
+
+.restaurant_total_main_img {
+    /* max-width: 50vw; */
+    /* max-width: 50%; */
+    position: relative;
+    overflow: hidden;
+}
+
+.restaurant_total_main_img>.main3 {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    /* transform: rotate(5deg); */
+}
+
+.restaurant_total_main_img .logo-span-wrap li {
+    font-size: 8vw;
+}
+
+.restaurant_total_main_img>img {
+    max-width: 100%;
+    width: 55%;
+    height: 100%;
+    aspect-ratio: 0.7/0.3;
+    margin: 0 auto;
+    border-radius: 70px;
+    display: block;
+}
+
+/* 레스토랑 로그 + 컨텍츠 박스 wrap */
+.restaurant_explanation {
+    display: flex;
+    /* padding: 2%; */
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 65px;
+    flex-wrap: wrap;
+}
+
+.restaurant_explanation>div {
+    /* flex: 1; */
+}
+
+.restaurant_content_wrap {}
+
+/* restaurant_content_wrap - 컨텐츠 내용들*/
+.restaurant_content_wrap>span:nth-of-type(1) {
+    background-color: #f08400;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.restaurant_content_wrap>h1 {
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Gugi';
+}
+
+.restaurant_content_wrap>div>span {
+    display: block;
+}
+
+/* 레스토랑 로고 1~9 이미지 */
+.restaurant_logo1 {
+    background: url(../../public/images/seasonal/seasonal1/seasonal1.jpg) no-repeat center/cover;
+}
+
+.restaurant_logo2 {
+    background: url(../../public/images/seasonal/seasonal2/seasonal2.png) no-repeat center/cover;
+}
+
+.restaurant_logo3 {
+    background: url(../../public/images/seasonal/seasonal3/seasonal3.png) no-repeat center/cover;
+}
+
+.restaurant_logo4 {
+    background: url(../../public/images/seasonal/seasonal4/seasonal4.png) no-repeat center/cover;
+}
+
+.restaurant_logo5 {
+    background: url(../../public/images/seasonal/seasonal5/seasonal5.jpg) no-repeat center/cover;
+}
+
+.restaurant_logo6 {
+    background: url(../../public/images/seasonal/seasonal6/seasonal6.png) no-repeat center/cover;
+}
+
+.restaurant_logo7 {
+    background: url(../../public/images/seasonal/seasonal7/seasonal7.png) no-repeat center/cover;
+}
+
+.restaurant_logo8 {
+    background: url(../../public/images/seasonal/seasonal8/seasonal8.jpg) no-repeat center/cover;
+}
+
+.restaurant_logo {
+    /* position: absolute; */
+    /* top: -50%; */
+    /* transform: translateY(50%); */
+    /* left: 5%; */
+    width: 153px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 레스토랑 빌딩 이미지 */
+.restaurant_building_img {
+    /* margin-top: 30px; */
+}
+
+/* 레스토랑 1~9 이미지 */
+.restaurant_img1 {
+    background: url(../../public/images/seasonal/seasonal1/seasonal1-main.jpg);
+}
+
+.restaurant_img2 {
+    background: url(../../public/images/seasonal/seasonal2/seasonal2-main.jpg);
+}
+
+.restaurant_img3 {
+    background: url(../../public/images/seasonal/seasonal3/seasonal3-main.jpg);
+}
+
+.restaurant_img4 {
+    background: url(../../public/images/seasonal/seasonal4/seasonal4-main.jpg);
+}
+
+.restaurant_img5 {
+    background: url(../../public/images/seasonal/seasonal5/seasonal5-main.jpg);
+}
+
+.restaurant_img6 {
+    background: url(../../public/images/seasonal/seasonal6/seasonal6-main.jpg);
+}
+
+.restaurant_img7 {
+    background: url(../../public/images/seasonal/seasonal7/seasonal7-main.jpg);
+}
+
+.restaurant_img8 {
+    background: url(../../public/images/seasonal/seasonal8/seasonal8-main.jpg);
+}
+
+.restaurant_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    width: 100%;
+    height: 45vh;
+}
+
+/* 레스토랑 주의사항 */
+.restaurant_caution {
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: 'Gugi';
+}
+
+.restaurant_caution p {
+    font-family: 'Gugi';
+}
+
+.restaurant_method {
+    padding: 10px 0;
+}
+
+.restaurant_method tr td {
+    padding: 7px;
+    font-family: 'Jua';
+    font-size: 1.2em;
+}
+
+/* 레스토랑 메인 - 컨텐츠 */
+.restaurant_main_content_wrap {
+    max-width: 100%;
+}
+
+.seasonal_restaurant_product {
+    padding: 45px;
+}
+
+.product_detail {
+    padding: 10px 0 50px 0;
+    text-align: center;
+    margin: 60px;
+}
+
+.product_detail>h1 {
+    padding: 30px;
+    font-family: 'Jua';
+    font-size: 2.5rem;
+}
+
+.detail_img {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product_detail_img {
+    max-width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.move_sun {
+    width: 10vw;
+    display: block;
+    padding: 0 20px;
+    animation: move_sun_ani 8s linear infinite;
+}
+
+@keyframes move_sun_ani {
+    to {
+        transform: rotate(0);
+    }
+
+    from {
+        transform: rotate(360deg);
+
+    }
+
+}
+
+/* 레스토랑 메인 - 컨텐츠 (픽업 메뉴 정보) */
+.restaurant_pickup_info {
+    padding: 20px;
+    text-align: center;
+    margin: 80px;
+}
+
+.restaurant_pickup_info>h2 {
+    padding: 5px 0 30px 0;
+    font-size: 2rem;
+    font-family: 'Jua';
+}
+
+.menu_pickup_info_wrap {
+    max-width: 1200px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    opacity: 0;
+    transition: .3s ease-in;
+    transform: translateY(30%);
+}
+.menu_pickup_info_wrap.on {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 픽업메뉴&&추천메뉴 */
+.menu_pickup_info {
+    width: calc((100% - 120px) / 3);
+    aspect-ratio: 1/1;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: 10px 2px 3px #ccc;
+}
+
+/* 픽업메뉴 -이미지 */
+.menu_pick_img {
+    width: 100%;
+    /* height: 8.6875rem; */
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.menu_pick_img>img {
+    /* outline: 3px solid #483591; */
+    transition: 0.4s ease-out;
+    width: 100%;
+    aspect-ratio: 16/12;
+    display: block;
+    /* border-bottom: 3px solid #483591; */
+}
+
+.menu_pick_img:hover img {
+    transform: scale(1.07);
+}
+
+/* 픽업메뉴 - 설명 */
+.menu_pickup_detail {
+    max-width: 100%;
+    /* height: calc(100% -8.6875rem ); */
+    /* padding: 20px; */
+    /* outline: 1px solid darkblue; */
+
+}
+
+.menu_pickup_detail>h3 {
+    font-size: 1.15rem;
+    /* border-bottom: 3px solid #483591; */
+    padding: 20px;
+    font-family: 'Gugi';
+
+}
+
+
+.menu_pickup_detail>span {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fdd900;
+    border-radius: 20px;
+    display: inline-block;
+    width: 60%;
+    color: #483591;
+    font-family: 'Jua';
+}
+
+.menu_pickup_ingredient {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* 추천메뉴 박스 */
+.Recommended_menu_information {
+    margin: 40px;
+}
+
+/* 레스토랑 하단 대표 이미지 */
+.restaurant_bg_wrap {
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+.restaurant_bg_img {
+    width: 100%;
+}
+
+.restaurant_bg_img>img {
+    /* height: 500px; */
+    aspect-ratio: 2/1.5;
+    width: 60vw;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1150px) {
+    .seasonal_restaurant_product {
+        padding: 0;
+    }
+
+    .restaurant_pickup_info {
+        padding: 0px;
+    }
+
+    .menu_pickup_info_wrap {}
+
+    .menu_pickup_info {
+        width: calc((100% - 100px) /2);
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    .menu_pickup_info {
+        width: 100%;
+    }
+
+    .map_wrap {
+        margin: 0 !important;
+    }
+
+    .map_bx {
+        min-width: 95%;
+    }
+
+    .restaurant_bg_img>img {
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .restaurant_explanation .col-3 {
+        width: 100%;
+    }
+
+    .restaurant_caution {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .restaurant_caution p {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    .restaurant_logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .restaurant_explanation .col-8 {
+        width: 100%;
+    }
+
+    .restaurant_content_wrap>span:nth-of-type(1) {
+        text-align: center;
+        margin: 0 auto 20px;
+        width: 50vw;
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width : 710px) {
+    .restaurant_pickup_info {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    .restaurant_method table tr td:nth-child(2){
+        width: 100px;
+    }
+    .restaurant_method tr td{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    body>* {
+        overflow-x: hidden;
+    }
+
+    .seasonal_restaurant_bx>div {
+        height: auto;
+    }
+
+    .restaurant_img {
+        aspect-ratio: 2/1;
+    }
+
+    .restaurant_total_main_img>img {
+        /* width: 100vw; */
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width : 500px) {
+    .restaurant_explanation {
+        padding: 20px;
+    }
+
+    .restaurant_caution {
+        font-size: 1rem;
+    }
+
+    .restaurant_logo {
+        width: 150px;
+    }
+
+    .restaurant_content_wrap>h1 {
+        font-size: 1.6rem;
+    }
+
+
+    .Recommended_menu_information {
+        margin: 10px;
+    }
+
+    .product_detail {
+        margin: 15px;
+    }
+
+    .product_detail>h1 {
+        font-size: 2rem;
+        padding: 15px;
+    }
+
+    .swipe_sec_tit {
+        font-size: 1.6rem !important;
+    }
+
+    .swipe_sec_cat {
+        font-size: 1.2rem;
+    }
+
+    .map_bx {
+        padding: 0 !important;
+    }
+
+    .map_logo {
+        width: 50px;
+    }
+
+    .restaurant_method table tr td:nth-child(2) {
+        width: 65px;
+    }
+    .restaurant_method tr td {
+        font-size: 0.9rem;
+    }
+}

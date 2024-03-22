@@ -1,0 +1,28 @@
+.weather-bx{
+    max-width: 300px;
+    margin: 50px auto;
+    text-align: center;
+    border: 3px solid #000;
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 10px;
+    font-family: 'Gugi';
+    border-radius: 5px;
+}
+
+.weather-bx>h4{
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+.weather-bx>h5{
+    font-size: 1.5rem;
+}
+
+.weather-bx>img{
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+
+.weather-bx>p{
+    font-size: 1.3rem;
+}

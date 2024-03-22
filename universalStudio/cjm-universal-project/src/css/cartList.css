@@ -1,0 +1,237 @@
+/* 장바구니 리스트 CSS */
+
+/* 전체부모 박스 */
+#cartlist {
+    position: fixed;
+    top: 0px;
+    right: -101.5%;
+    width: 90vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.93);
+    z-index: 999999999;
+}
+
+/* 닫기버튼 */
+#cartlist .cbtn {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    height: 39px;
+    background-position: -129px -342px;
+}
+
+
+#cartlist .cbtn span {
+
+    font-size: 2.5rem;
+}
+
+#cartlist table {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 14px;
+    border-top: 2px solid rgb(34, 34, 34);
+    border-bottom: 2px solid rgb(34, 34, 34);
+    border-collapse: collapse;
+}
+
+#cartlist caption {
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+#cartlist th {
+    padding: 15px 0px;
+    background-color: rgb(229, 229, 229);
+    font-size: 16px;
+}
+
+#cartlist td {
+    padding: 10px 0px;
+    border-top: 1px solid rgb(85, 85, 85);
+    text-align: center;
+}
+#cartlist td:nth-child(2) {
+    font-size: 3.5rem;
+}
+#cartlist td img {
+    width: 50px;
+}
+
+/* 카트버튼 이미지 */
+#mycart {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    cursor: pointer;
+    display: none;
+    
+}
+
+/* 카트박스 사이드 이동상태 */
+#mycart.on {
+    position: fixed;
+    top: 50%;
+    left: calc(100% - 70px);
+    transform: translate(0, -50%);
+    background-color: #ccc;
+    border-radius: 10px 0 0 10px;
+    padding: 15px;
+    transition: 0.4s ease-in 2s;
+    border: 3px solid #555;
+    
+}
+
+
+/* 원본 이미지 크기 */
+#mycart h1 {
+    font-size: 8rem;
+    border-radius: 20px;
+}
+
+/* 변경 이미지 크기 */
+#mycart.on h1 {
+    font-size: 2.2rem;
+    transition: 0.4s ease-in 2s;
+}
+
+#mycart .cntBx {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* cnt-part */
+.item-cnt {
+    width: 20px;
+    text-align: center;
+    aspect-ratio: 1/1;
+    border: 0;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-cnt button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+}
+
+.btn-cnt button h3 {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.btn-cnt button h3:hover{
+    color: blue;
+}
+
+.cnt-part span{
+    display: flex;
+}
+
+/* 카트 삭제 버튼 */
+.cfn{
+    width: 25px;
+    aspect-ratio: 1/1;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    margin: 0 auto;
+    border: 0;
+}
+
+/* 반영 버튼 */
+.btn-insert{
+    display: none;
+}
+.cfn h2{
+    font-size: 1.7rem;
+}
+
+/* 페이징 파트 */
+#cartlist .paging{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 0;
+}
+
+.paging a, .paging b{
+    color: #222;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width : 700px) {
+    #cartlist td {
+        font-size: 12px;
+    }
+    #cartlist td:nth-child(2) {
+        font-size: 2.5rem;
+    }
+    .item-cnt {
+        font-size: 1rem;
+    }
+    .btn-cnt button h3{
+        font-size: 1.2rem;
+    }
+    .cfn h2{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width : 555px) {
+    #cartlist{
+        width: 100vw;
+    }
+    #cartlist td {
+        font-size: 10px;
+    }
+    
+    #cartlist td:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .item-cnt {
+        font-size: 0.8rem;
+    }
+    .btn-cnt button h3 {
+        font-size: 1rem;
+    }
+    .cfn h2 {
+        font-size: 1.2rem;
+    }
+    #cartlist th {
+        font-size: 10px;
+    }
+    #cartlist caption h1{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width : 460px) {
+    #cartlist{
+        /* display: none; */
+    }
+    #mycart.on h1{
+        font-size: 1.8rem;
+    }
+    #mycart .cntBx{
+        font-size: 1rem;
+    }
+    #mycart.on{
+        left: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    #mycart.on h1{
+        font-size: 1.5rem;
+    }
+    #mycart .cntBx{
+        font-size: 0.85rem;
+    }
+    #mycart.on {
+        left: calc(100% - 50px);
+    }
+}

@@ -1,0 +1,212 @@
+body > * {
+}
+h1,
+h2,
+h3,
+p,
+span,
+div,
+button {
+    font-family: "Nanum Gothic";
+}
+.customerCenter-wrap {
+    max-width: 1280px;
+    margin: 100px auto;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.customerCenter-left-wrap {
+    width: 25%;
+}
+.customerCenter-left-wrap > h1 {
+    padding: 20px 0;
+    text-align: start;
+}
+
+.customerCenter-right-wrap {
+    width: 70%;
+}
+
+/* 옵션 버튼 박스 */
+.customer-option-bx {
+}
+.customer-option-bx button {
+    display: block;
+    padding: 18px 10px;
+    font-size: 1.05rem;
+    width: 200px;
+    background-color: #fff;
+    /* border: 1px solid rgb(250, 250, 250); */
+    border: 1px solid rgb(242, 242, 242);
+    color: rgb(153, 153, 153);
+    text-align: start;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* 옵셔 버튼 클릭시 색상변경 */
+.customerColorOn {
+    background-color: rgb(250, 250, 250) !important;
+}
+.customerColorOn span {
+    color: #1b6ef3 !important;
+    font-weight: 600;
+}
+
+/* 버튼 안 화살표 */
+.customer-option-bx {
+}
+.customer-option-bx span:first-child {
+    font-size: 1.2rem;
+}
+.customer-option-bx span:last-child {
+    display: inline-block;
+    font-size: 1.3em;
+    /* line-height: 1.2; */
+    color: #ccc;
+}
+
+/* 옵션 선택시 결과 박스 */
+.customerCenter-right-wrap > h2 {
+    padding: 20px;
+}
+
+.customerCenter-bx > div:first-child {
+    display: flex;
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    box-sizing: border-box;
+    text-align: center;
+}
+.customerCenter-smenu {
+    display: flex;
+}
+.customerCenter-smenu > li {
+    padding: 10px 30px;
+    /* outline: 1px solid beige; */
+    border-bottom: 1px solid #f4f4f4;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: start;
+    color: #000;
+    /* width: 95px; */
+}
+.customerCenter-bx > div > div:first-child {
+    flex: 0.4;
+}
+.customerCenter-bx > div > div:nth-child(2) {
+    flex: 2.5;
+}
+.customerCenter-bx > div > div:nth-child(3) {
+    flex: 0.5;
+}
+.customerCenter-bx > div > div:last-child {
+    flex: 1.2;
+}
+/*  */
+.customerCenter-smenu > li:first-child {
+    flex: 0.4;
+}
+.customerCenter-smenu > li:nth-child(2) {
+    flex: 2.5;
+}
+.customerCenter-smenu > li:nth-child(3){
+    flex: 0.5;
+}
+.customerCenter-smenu > li:last-child {
+    flex: 1.2;
+}
+
+/* 토글 대상 박스 */
+.customerCenter-bx {
+    cursor: pointer;
+}
+.customerCenter-header {
+    padding: 12px 0;
+    text-align: center;
+}
+
+/* 고객센터 아코디언 박스 */
+.cust-smenu-cont {
+    display: none;
+    /* background-color: #f2f2f2; */
+    padding: 25px 10px;
+}
+.cust-smenu-cont h3 {
+    text-align: center;
+}
+.cust-smenu-cont h2 {
+    margin-bottom: 10px;
+    color: #555;
+    text-align: center;
+}
+.cust-smenu-cont h2 strong {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.cust-smenu-cont.on {
+    display: block;
+    transition: 0.4s ease-in;
+}
+
+.split_data {
+    padding: 7px;
+    font-size: 15px;
+}
+
+.tit-color-change.on {
+    color: #1b6ef3;
+}
+
+@media screen and (max-width: 1020px) {
+    .customerCenter-wrap{
+        margin: 10px auto 40px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .customerCenter-left-wrap {
+        width: 100%;
+    }
+    .customerCenter-right-wrap {
+        width: 100%;
+    }
+    .customer-option-bx {
+        display: flex;
+    }
+    .customer-option-bx button {
+        flex: 1;
+        margin: 0 10px;
+    }
+    .customerCenter-smenu > li {
+        padding: 10px;
+    }
+    .customerCenter-left-wrap > h1{
+        text-align: center;
+    }
+    .customer-option-bx span:last-child{
+        transform: rotate(90deg);
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .customerCenter-smenu > li {
+        padding: 10px 5px;
+        font-size: 0.7rem;
+    }
+    .customerCenter-bx > div > div{
+        font-size: 0.7rem;
+    }
+    .customer-option-bx span:first-child {
+        font-size: 1rem;
+    }
+    .customer-option-bx button{
+        padding: 13px 10px;
+    }
+    
+}

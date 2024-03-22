@@ -1,0 +1,428 @@
+/* DC.com 전체 레이아웃 CSS */
+
+html{
+    scroll-behavior: smooth;
+}
+
+main.cont {
+    /* 최소높이 상단,하단제외 채우기
+    - 하단 여백이 생기는 일이 없어짐! */
+    min-height: calc(100vh - 65px - 365px);
+    /* transform: translateY(10px); */
+   /* margin-top: 65px; */
+}
+
+.top-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 999999999;
+    background-color: #fff;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    transition: transform 0.15s ease-in, opacity 0.15s ease-in;
+    opacity: 1;
+}
+.top-area.hide{
+    transform: translateY(-110%);
+    opacity: 0;
+}
+.top-area.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999999;
+    transform: translateY(0);
+     /* 적절한 z-index 값으로 조정하세요 */
+    /* 추가적인 스타일 지정 */
+}
+
+.gnb {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.gnb ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0 20px
+}
+
+.gnb>ul>li {
+    /* 상위메뉴 부모자격 */
+    position: relative;
+    line-height: 80px;
+    font-family: 'Gugi';
+    font-size: 1.2rem;
+}
+
+.gnb a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.gnb a:hover {
+    color: #007aff;
+}
+
+/* 서브메뉴 */
+.smenu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.503));
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.503); 
+    -> 일반박스 그림자를 주면 가상요소에는 그림자 안생김
+    filter의 드롭쉐도우를 사용하면 전체구성요소를 통합한
+    그림자가 생성된다!!! */
+    white-space: nowrap;
+    line-height: 2.5;
+    /* 처음에 안보임 */
+    display: none;
+    top: 53px;
+}
+
+/* 오버시보임 */
+.gnb>ul>li:hover .smenu {
+    display: block;
+}
+
+/* 삼각형모양 디자인 */
+.smenu::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* gnb 검색입력창 박스 */
+.searchingGnb {
+    position: absolute;
+    left: -225px;
+    top: 15px;
+    line-height: 41px;
+
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: none;
+    /* 처음에 안보임! */
+}
+
+.searchingGnb input {
+    font-size: 15px;
+    width: 77%;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.schbtnGnb {
+    cursor: pointer;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+
+/* 메인영역 */
+
+/* 하단영역 */
+.info {
+    text-align: center;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.info>ul>li:last-child {
+    font-weight: bold;
+}
+
+/* 하단 ol>li>a 링크 박스 */
+ol.bmenu {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.bmenu li {
+    padding: 0 10px;
+}
+
+.bmenu li+li {
+    border-left: 2px solid #fff;
+}
+
+.bmenu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.bmenu a:hover {
+    color: #007aff;
+}
+
+/* 햄버거버튼 */
+.hambtn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hambtn::before {
+    content: '≡';
+}
+
+.top-area.on .hambtn::before {
+    content: '×';
+}
+
+/* lauout2 */
+.cont.on,
+.footer.on {
+    display: none;
+}
+
+.top-show-nav {
+    display: none;
+}
+
+.top-show-nav.on {
+    display: block;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 999999;
+    overflow: auto;
+}
+
+.gnb2 {
+    padding-top: 65px;
+}
+
+.gnb2 li {
+    font-size: 1.5rem;
+    margin: 5px;
+    font-family: 'Jua';
+    border-bottom: 1px solid #ccc;
+    text-indent: 30px;
+    padding: 5px;
+}
+
+.gnb2 li:first-child {
+    text-align: center;
+    position: relative;
+}
+
+.gnb2 li a {
+    color: #000;
+    display: block;
+}
+
+.smenu2 ol {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+
+.smenu2>ol>li {
+    font-size: 1.2rem;
+    width: 95%;
+    border: 0;
+    padding: 0;
+}
+
+.smenu2>ol>li a {
+    color: #555;
+    text-align: start;
+}
+
+.arrow-icon{
+    margin: 0 5px;
+    font-size: 1.2rem;
+}
+
+.gnb2 .searchingGnb {
+    text-align: start;
+    position: absolute;
+    top: -3px;
+    width: 80%;
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius: 20px;
+    background-color: #efefef;
+    box-sizing: border-box;
+    padding: 0 5px;
+    display: none;
+    /* 처음에 안보임! */
+}
+
+.searchingGnb input {
+    position: absolute;
+    font-size: 15px;
+    width: 77%;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.member-join {
+    display: flex;
+    margin: 0 20px;
+}
+
+.member-join li {
+    border: 1px solid #555;
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+/* 환영메시지 */
+.logmsg{
+    position: absolute;
+    font-family: 'Jua';
+    font-size: 1.2rem;
+    left: 50%;
+    /* top: 0; */
+    transform: translateX(-50%);
+    
+}
+
+.smenu2{
+    display: none;
+    margin: 15px 0;
+}
+.smenu2.on{
+    display: block;
+}
+
+
+.top-mark{
+    position: fixed;
+    bottom: 50px;
+    right: 1%;
+    z-index: 999;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #007aff;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.top-mark>h3{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width:1320px) {
+    body {
+        padding-top: 65px;
+    }
+}
+
+@media screen and (max-width:1033px) {
+    .gnb>ul>li:nth-child(1)~li:nth-child(-n+10) {
+        display: none;
+
+    }
+
+    .hambtn {
+        display: block;
+    }
+}
+@media screen and (max-width:1024px) {
+    .logmsg{
+        right: 5%;
+    }
+    
+    .top-area {
+        overflow: hidden;      
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    .gnb2 li {
+        font-size: 1.5rem;
+        margin: 5px;
+        font-family: 'Jua';
+        border-bottom: 1px solid #ccc;
+        text-indent: 5px !important;
+    }
+
+    .smenu2>ol>li {
+        font-size: 0.95rem !important;
+    }
+
+    .top-mark{
+        width: 60px;
+        height: 60px;
+    }
+
+    .top-mark>h3{
+        font-size: 0.95rem;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    .logmsg{
+        right: 45%;
+        font-size: 1rem;
+    }
+    .nav-logo{
+        margin-top: 0.5px;
+        width: 100px;
+        padding-left: 5px;
+    }
+}

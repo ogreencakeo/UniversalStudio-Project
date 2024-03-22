@@ -1,0 +1,54 @@
+박스별 회전 상태 배열 추가:
+
+useState 훅을 사용하여 각 박스의 회전 상태를 저장하는 배열인 boxRotations를 도입했습니다.
+Array(pickUpData.length).fill(false)를 사용하여 초기에 모든 박스의 회전 상태를 false로 초기화했습니다.
+
+rotateAni 함수 수정:
+rotateAni 함수를 호출할 때 클릭한 박스의 인덱스를 전달하도록 수정했습니다.
+클릭한 박스의 회전 상태를 토글하여 업데이트하고, 
+나머지 박스들의 상태는 변경되지 않도록 newRotations 배열을 생성하여 업데이트했습니다.
+
+pickUpData.map 내부의 박스 클래스 동적 적용:
+boxRotations[i]를 사용하여 각 박스의 회전 상태에 따라 on 클래스를 동적으로 적용했습니다.
+이러한 변경으로 각 박스는 개별적으로 회전 상태를 관리하게 되어,
+ 클릭한 박스만이 회전하고 나머지는 그대로 유지될 것입니다. 이로써 개별 박스에 대한 동작이 더욱 제어 가능해졌습니다.
+
+
+
+  // 박스별 회전 상태를 저장하는 배열
+const [boxRotations, setBoxRotations] = useState(Array(pickUpData.length).fill(false));
+
+const rotateAni = (index) => {
+    // prevRotations는 현재의 boxRotations 배열을 나타냄
+    setBoxRotations((prevRotations) => {
+        const newRotations = [...prevRotations];
+        newRotations[index] = !newRotations[index];
+        return newRotations;
+    });
+};
+
+{/* Pick-up Section */}
+    <div className="pick-up">
+        <div className="pick-up-wrap">
+        {pickUpData.map((v, i) => (
+            <div
+            className={`pick-up-img-box ${boxRotations[i] ? 'on' : ''}`}
+            onClick={() => rotateAni(i)}
+            key={i}
+            >
+            <div className="pick-up-img">
+                <div className="pick1">
+                <img src={`./images/main/pickup/${v.img}`} alt={`${v.idx}번째 이미지`} />
+                <h2>{v.title}</h2>
+                </div>
+                <div className="pick2">
+                {result[v.emotion]}
+                <p>{v.cont}</p>
+                </div>
+            </div>
+            </div>
+        ))}
+        </div>
+    </div>
+    </div>
+

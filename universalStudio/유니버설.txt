@@ -1,0 +1,14 @@
+"" : {
+    "location" : "",
+    "service_type" : "",
+    "payment_method" : "",
+    "menu_provided" : ``,
+    "japanese_page" : "",
+    "englisgh_page" : "",
+    "children_page" : "",
+    "seasonal_img" : [],
+    "seasonal_logo" : ,
+    "seasonal_main_img" : "",
+    "tite" : ,
+    "sub_title" : 
+},

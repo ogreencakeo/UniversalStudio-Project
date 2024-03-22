@@ -1,0 +1,53 @@
+.image-move-wrap{
+    position: relative;
+    width: 4000px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-top: 7px solid black;
+    border-bottom: 7px solid black;
+    box-sizing: border-box;
+}
+.img-move-ani:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.image-move{
+    position: relative;
+    left: 0;
+    width: 6400px;
+    display: flex;
+}
+
+.image-move ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* flex: 1; */
+    display: flex;
+}
+
+.image-move li{
+    /* flex: 1; */
+    width: 400px;
+}
+
+.image-move li>img{
+    width: 100%;
+    /* height: auto; */
+    aspect-ratio: 1.15/1;
+    display: block;
+    border: 10px solid black;
+    box-sizing: border-box;
+}
+
+.img-move-ani{
+    animation: img-move-ani 35s linear infinite;
+    /* animation: img-move-ani 5s linear infinite; */
+}
+
+@keyframes img-move-ani{
+    to{
+        left: -3200px;
+        /* left: -1600px; */
+    }
+}

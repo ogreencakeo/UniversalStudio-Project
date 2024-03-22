@@ -1,0 +1,160 @@
+/* 전체 회원가입 페이지 랩핑 박스 */
+.join-the-membership-wrap {
+    max-width: 1200px;
+    margin: 100px auto 60px;
+    padding: 50px;
+
+}
+
+/* 회원가입 박스 */
+.member-bx {
+    max-width: 600px;
+    border: 3px solid #ccc;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.member-bx>h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.member-bx>h2 {
+    font-size: 2rem;
+    margin: 20px;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+
+.member-bx>form {
+    padding: 20px;
+    margin: 20px;
+}
+.member-bx table {
+    margin: 0 auto;
+    width: 100%;
+    /* border-collapse: collapse; */
+    /* table-layout: fixed; */
+}
+
+.member-bx tr {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.member-bx td {
+    box-sizing: border-box;
+    padding: 15px;
+    outline: 2px solid black;
+    font-size: 1.1rem;
+    
+}
+
+.member-bx td:first-child {
+    min-width: 150px; /* 첫 번째 td의 너비 설정 */
+}
+
+.member-bx td:last-child {
+    width: 100%;
+    
+}
+
+.member-bx td input{
+    padding: 10px 50px;
+}
+.member-bx tr button{
+    font-size: 1.1rem;
+    background-color: slategrey;
+    border-radius: 10px;
+    padding: 15px 70px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.member-bx p{
+    font-size: 1.1rem;
+}
+.member-bx p strong{
+    margin: 0 10px;
+}
+.member-bx p strong:hover .login-link{
+    color: orangered;
+}
+
+@media screen and (max-width : 800px) {
+    .member-bx td{
+        /* padding: 10px 20px; */
+    }
+    .member-bx td{
+        font-size: 1rem;
+    }
+    .member-bx td input {
+        text-align: center;
+    }
+    .member-bx>form{
+        padding: 0;
+    }
+}
+@media screen and (max-width : 700px) {
+    .member-bx{
+        padding: 10px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .member-bx td:first-child{
+        display: none;
+    }
+    .member-bx td:first-child{
+        outline: none;
+    }
+    .member-bx td:last-child{
+        display: block;
+    }
+    .member-bx td{
+        padding: 0;
+        outline: none;
+    }
+    .join-the-membership-wrap{
+        padding: 10px;
+    }
+    .member-bx td input {
+        width: 300px;
+    }
+    .member-bx table{
+        padding: 20px;
+    }
+    .join-the-membership-wrap{
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .member-bx td input {
+        max-width: 150px;
+    }
+    .member-bx table{
+        padding: 0;
+    }
+    .member-bx tr{
+        margin-bottom: 10px;
+    }
+    .member-bx tr button{
+        padding: 10px 70px;
+    }
+    .member-bx p {
+        font-size: 0.95rem;
+        width: 350px;
+        text-align: start;
+    }
+    .member-bx p strong {
+        display: block;
+        margin: 5px auto 0;
+    }
+}
+@media screen and (max-width : 400px) {
+    .login-bx {
+        padding: 0 !important;
+    }
+}

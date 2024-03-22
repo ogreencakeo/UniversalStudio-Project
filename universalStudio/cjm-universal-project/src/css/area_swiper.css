@@ -1,0 +1,81 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper3{
+    padding: 20px;
+}
+
+.area-swiper-img{
+    max-width: 500px;
+    aspect-ratio: 1/1.2;
+    background-color: #fff;
+    border: 3px solid #0b57d0ff;
+    border-radius: 20px;
+}
+.area-swiper-img img{
+    max-width: 100%;
+    aspect-ratio: 1.1/12;
+    display: block;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+}
+
+.area-swiper-bx h1{
+    font-size: 2rem;
+    margin: 10px 0 20px;
+    font-family: 'Jua';
+    color: #041e49ff;
+}
+
+.img-hi{
+    min-height: 100px;
+    padding: 5px 20px 20px;
+}
+.img-hi>p{
+    text-align: center;
+    font-family: 'Jua';
+    border: 2px solid black;
+    color: #fff;
+    background-color: #0842a0ff;
+    padding: 3px 2px;
+    border-radius: 5px;
+
+}
+.img-hi>h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #073888ff;
+}
+.img-hi>h5::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 5px;
+}
+/* 이미지 호버시 */
+.area-swiper-img>img:hover .img-hi{
+    transform: translateY(-100%);
+}

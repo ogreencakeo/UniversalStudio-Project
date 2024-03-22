@@ -1,0 +1,125 @@
+/* 전체 페이지 랩핑 */
+.ticket-wrap {
+    max-width: 100%;
+}
+.ticket-wrap-bx {
+    max-width: 1200px;
+    /* outline: 1px solid red; */
+    margin: 0 auto;
+}
+/* 비디오 박스 랩핑 */
+.ticket-video-wrap {
+    width: 100%;
+}
+.ticket-video-wrap > iframe {
+    width: 100%;
+    aspect-ratio: 2/1;
+    border-radius: 20px;
+}
+.ticket-video-logo {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 3px;
+}
+/* 티켓 판매 내용 */
+.ticket-sales-details {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+/* 티켓 제목및 컨텐츠 */
+.ticket-content-wrap-left {
+    width: 43%;
+}
+/* 티켓 왼쪽 랩핑 이미지 */
+.ticket-wrap-img {
+    width: 100%;
+}
+.ticket-wrap-img > div {
+    width: 100%;
+}
+.ticket-wrap-img > div>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* <!-- 티켓 제목및 컨텐츠 (오른쪽)--> */
+.ticket-content-wrap-right {
+    width: 55%;
+}
+.titcket-tit-wrap h2 {
+    font-size: 1.2em;
+}
+/* 티켓 컨텐츠및 제목  */
+.ticket-tit-cont-top {
+    display: flex;
+    padding: 5px;
+}
+.ticket-tit-cont-top > h1 {
+    font-size: 2em;
+    margin-right: 10px;
+}
+.fa-share-from-square {
+    font-size: 2em;
+    display: block;
+}
+.ticket-tit-cont-bottom {
+}
+.ticket-tit-money,
+.ticket-tit-where {
+    display: flex;
+    font-size: 1.2em;
+}
+.ticket-tit-money span,
+.ticket-tit-where span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* 상품정보 */
+.ticket-info-wrap > h1 {
+    font-size: 1.5em;
+}
+.ticket-info-bx {
+    display: flex;
+    width: 100%;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+.ticket-info-bx > div {
+    width: 50%;
+    /* outline: 1px solid blue; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 25px;
+}
+.ticket-info-bx > div > span {
+    display: block;
+    font-size: 1.2em;
+}
+/* 리뷰어 선택 */
+.ticket-reviewer-cont-wrap {
+    margin-top: 10px;
+    width: 100%;
+}
+.ticket-reviewer-img {
+    width: 80%;
+    margin: 0 auto;
+}
+.ticket-reviewer-img > img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.ticket-reviewer-cont {
+    padding: 10px;
+    width: 100%;
+}
+.ticket-reviewer-cont > span {
+    text-align: center;
+    display: block;
+}

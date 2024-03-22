@@ -1,0 +1,37 @@
+.page3-img-wrapper{
+    /* position: static; */
+    max-width: 1280px;
+    height: 500px;
+}
+.universal-change-img{
+    max-width: 1280px;
+    margin: 0 auto;
+    /* position: absolute; */
+    overflow: hidden;
+    outline: 1px solid #ccc;
+    height: 500px;
+}
+
+.bg{
+    /* position: absolute; */
+    width: 590px;
+    aspect-ratio: 1/1;
+    background: url(../../public/images/main/1.jpg) no-repeat fixed;
+}
+
+.mask{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(../../public/images/main/2.jpg) no-repeat fixed;
+    transition: top .4s ease-out, left .4s ease-out;
+}
+
+.cover{
+    position: absolute;
+    width: 590px;
+    height: 590px;
+}

@@ -1,0 +1,186 @@
+.board-wrap{
+    max-width: 1280px;
+    margin: 150px auto 30px;
+}
+.board-wrap .selbx{
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 40px;
+    margin: 15px auto;
+}
+#cta{
+    width: 50px;
+
+}
+#sel{
+    width: 55px;
+    font-family: 'Nanum Gothic';
+    font-size: 12px;
+    margin: 0 5px;
+}
+#stxt{
+    margin-right: 5px;
+    width: 130px;
+}
+.dtbl{
+    width: 100%;  
+}
+.dtbl ul{
+    display: flex;
+}
+
+.board-cont-wrap{
+    width: 100%;
+}
+
+.board-cont-wrap ul{
+    display: flex;
+}
+
+.board-cont-wrap ul li{
+    width: 18%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.board-cont-wrap ul li:nth-child(2){
+    width: 30%;
+}
+.board-cont-wrap ul li:nth-child(2),
+.board-cont-wrap ul li:nth-child(3){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dtbl ul li{
+    width: 18%;
+    text-align: center;
+    padding: 12px 0;
+    border-top: 1.5px solid #000;
+    border-bottom: 1.5px solid #000;
+}
+.dtbl ul li:nth-child(2){
+    width: 30%;
+}
+
+.center-paging-link{
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* 게시판 */
+.dtblview{
+    max-width: 600px;
+    margin: 150px auto 0;
+}
+
+.dtblview>div{
+    padding: 20px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    margin: 25px auto;
+}
+.dtblview>h1{
+    font-family: 'Gugi';
+}
+.dtblview ul{
+    display: flex;
+}
+.dtblview ul li{
+    margin: 5px 3px;
+}
+.dtblview ul li:first-child{
+    width: 5=70px;
+    font-family: 'Jua';
+    font-size: 1.2rem;
+}
+.dtblview ul li:last-child{
+    width: 88%;
+}
+.dtblview ul li input,
+.dtblview ul li textarea{
+    width: 100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+.updateone ul li input,
+.updateone ul li textarea{
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+}
+.readone input, .readone ul div{
+    border: 0 !important;
+}
+.readone ul div{
+    font-size: 0.9rem;
+}
+.btngrp{
+    text-align: center;
+}
+.btngrp button{
+    padding: 10px 15px;
+    background-color: #3144cc;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 3px 50px;
+    cursor: pointer;
+}
+
+.btngrp button a{
+    color: #fff;
+    font-family: 'Jua';
+}
+
+@media screen and (max-width : 920px) {
+    .board-wrap{
+        margin: 50px auto 30px;
+    }
+    .readone {
+        margin: 50px auto;
+    }
+    .dtblview{
+        margin: 40px auto 50px;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+    .readone ul li{
+        font-size: 1rem;
+    }
+    .readone ul li:last-child input,
+    .readone ul li:last-child textarea{
+        font-size: 0.9rem;
+    }
+    .dtblview ul li:first-child{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 410px) {
+    .dtbl ul li{
+        font-size: 0.7rem;
+    }
+    .dtbl ul li:first-child{
+        text-align: left;
+        text-indent: 10px;
+    }
+    .board-cont-wrap ul li{
+        font-size: 0.7rem;
+        width: 10%;
+    }
+    .board-cont-wrap ul li:nth-child(2){
+        width: 40%;
+    }
+    .board-cont-wrap ul li:nth-child(3),
+    .board-cont-wrap ul li:nth-child(4){
+        width: 20%;
+    }
+}
+@media screen and (max-width : 365px) {
+    #stxt{
+        width: 128px;
+    }
+}

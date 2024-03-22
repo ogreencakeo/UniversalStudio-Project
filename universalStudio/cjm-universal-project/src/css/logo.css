@@ -1,0 +1,13 @@
+/* universal nav 로고 */
+.nav-logo{
+    margin: 0 auto;
+    /* padding: 20px; */
+    max-width: 130px;
+    transform: translateY(5px);
+}
+.nav-logo>img{
+    aspect-ratio: 2.42/1;
+    max-width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}

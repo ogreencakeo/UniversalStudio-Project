@@ -1,0 +1,17 @@
+.area-cont-bx{
+    max-width: 100%;
+    margin: 0 auto 200px;
+}
+.area-cont-bx ul{
+    display: flex;
+}
+.area-cont-bx li{
+    flex: 1;
+}
+.area-cont-bx ul button{
+    display: block;
+    font-size: 0.9rem;
+    padding: 15px;
+    width: 100%;
+    background-color: #fff;
+}

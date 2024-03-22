@@ -1,0 +1,8 @@
+안내견
+<i class="fa-solid fa-dog"></i>
+임산부
+<i class="fa-solid fa-person-pregnant"></i>
+휠체어
+<i class="fa-solid fa-wheelchair"></i>
+자막표시 안경
+<i class="fa-solid fa-glasses"></i>

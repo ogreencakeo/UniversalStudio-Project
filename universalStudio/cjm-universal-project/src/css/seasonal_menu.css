@@ -1,0 +1,211 @@
+@charset "utf-8";
+.seasonal_menu_wrap{
+    width: 100%;
+    background-color: #03192c;
+}
+
+p, span, i{
+    font-family: 'Jua', sans-serif;
+}
+
+.seasonal_menu_bx{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 시즈널 메뉴 타이틀 */
+.seasonal_menu_tit{
+    color: gainsboro;
+}
+
+.seasonal_menu_tit div{
+    width: 100%;
+    border: 1px dashed gainsboro;
+    margin: 15px 0;
+}
+
+/* 시즈널 각 메뉴들을 설정함 */
+.menu_block{
+    display: flex;
+    /* position: relative; */
+}
+
+.menu_block>span, .menu_block>div{
+    flex: 1;
+    padding: 10px;
+}
+
+.menu_block span{
+    display: block;
+    color: whitesmoke;
+    
+}
+
+.menu_block>span:nth-of-type(1){
+    font-size: 1.5em;
+    width: 50px;
+    outline: 1px solid red;
+    line-height: 53px;
+}
+.menu_block>div>span{
+    font-size: 2.8em;
+    outline: 1px solid red;
+}
+.fa-square-up-right{
+    width: 100%;
+    color: whitesmoke;
+    font-size: 3.7em;
+    outline: 1px solid red;
+    text-align: right;
+}
+
+/* 추천 시즈널 메뉴 특집 */
+.seasonal_overline_wrap{
+    /* background-color: whitesmoke; */
+    width: 100%;
+    padding: 20px;
+}
+
+.seasonal_overline_bx{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 추천 시즌널 메뉴 - 제목 */
+.seasonal_overline_tit{
+    padding: 80px;
+    text-align: center;
+}
+.seasonal_overline_tit>span{
+    font-size: 4em;
+    font-weight: 500;
+    text-align: center;
+    background-color: slategray;
+    display:inline-block;
+    padding: 5px 20px;
+    color: whitesmoke;
+    border: 5px solid #fff;
+}
+.seasonal_overline_tit span:last-child{
+    transform: rotate(3deg) !important;
+}
+
+.seasonal_overline_bx_wrap{
+    display: flex;
+}
+
+.seasonal_overline{
+    flex: 1;
+    padding: 20px;
+}
+
+.seasonal_overline span{
+    display: block;
+}
+.seasonal_font{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+    background-color: steelblue;
+    font-size: 5.5em;
+    margin: 0 auto;
+    text-align: center;
+    padding: 45px;
+    color: #fff;
+}
+.seasonal_overline span:nth-of-type(1){
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+    color: slategray;
+}
+.seasonal_overline span:nth-of-type(2){
+    font-size: 1.2em;
+    text-align: center;
+    padding: 25px;
+    line-height: 35px;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.seasonal_overline>div{
+    text-align: center;
+}
+
+/*.seasonal_overline img{
+    width: 10vw;
+}
+*/
+/* 시즈널 메뉴 - 박쥐사진 */
+.carved-img{
+    position: absolute;
+    left: 8%;
+    /* top: 5%; */
+    width: 20vw;
+    transform: rotate(35deg);
+    animation: seasonal_img_move 1s linear alternate infinite;
+}
+.bat-img{
+    position: absolute;
+    right: 2%;
+    width: 33vw;
+    transform: rotate(-10deg);
+    animation: seasonal_img_move 1s linear alternate infinite;
+}
+
+@keyframes seasonal_img_move {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+/* 시즈널 메뉴 콘텐츠 */
+.seasonal-main-content-wrap{
+    background-color: #483591;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.seasonal-main-content-bx{
+    max-width: 1300px;
+    /* clip-path   : polygon(0 0, 0 100%, 100% 100%, 100% 55%, 55% 0); */
+    /* border: 20px solid orangered; */
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.seasonal-title{
+    color: #fdd900;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Gugi';
+    padding: 5px;
+}
+
+.seasonal-sub-title{
+    padding: 25px 5px 5px 5px;
+    font-size: 2.2em;
+    color: #ef8b21;
+    text-align: center;
+    font-family: 'Gugi';
+}
+
+.seasonal-img-bx{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.seasonal-img-bx>div{
+    flex: 1;
+    display: block;
+    width: 20%;
+}
+.seasonal-img-bx>div>img{
+    width: 100%;
+}

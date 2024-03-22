@@ -1,0 +1,15 @@
+/* 굿즈 메뉴 */
+.menu_link{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.menu_link ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-family: 'Jua';
+}
+/* 굿즈메뉴 -nav 글자 사이즈 */
+.menu_link ul li{
+    font-size: 1.5em;
+}

@@ -1,0 +1,93 @@
+import { useState } from "react";
+
+export function Member() {
+    const [agreeTerms, setAgreeTerms] = useState(false);
+    const [agreePrivacy, setAgreePrivacy] = useState(false);
+    const [agreeOptional, setAgreeOptional] = useState(false); // 비필수항목 동의 상태
+
+    const handleTermsCheckbox = () => {
+        setAgreeTerms(!agreeTerms);
+    };
+
+    const handlePrivacyCheckbox = () => {
+        setAgreePrivacy(!agreePrivacy);
+    };
+
+    const handleOptionalCheckbox = () => {
+        setAgreeOptional(!agreeOptional);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // 필수항목 동의 여부 확인
+        if (agreeTerms && agreePrivacy) {
+            // 가입하기 로직
+            console.log("필수항목에 동의하셨습니다.");
+
+            // 비필수항목에 동의한 경우 추가 로직 수행 가능
+            if (agreeOptional) {
+                console.log("비필수항목에 동의하셨습니다.");
+            }
+        } else {
+            alert("필수항목에 동의해주세요.");
+        }
+    };
+
+    return (
+        <>
+            <div className="join-the-membership-wrap">
+                {/* 회원가입 박스 */}
+                <div className="member-bx">
+                    {/* ... (이전 코드) ... */}
+                    <tr>
+                        <td colSpan="2">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={agreeTerms}
+                                    onChange={handleTermsCheckbox}
+                                />
+                                이용약관에 동의합니다. (필수)
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colSpan="2">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={agreePrivacy}
+                                    onChange={handlePrivacyCheckbox}
+                                />
+                                개인정보처리방침에 동의합니다. (필수)
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colSpan="2">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={agreeOptional}
+                                    onChange={handleOptionalCheckbox}
+                                />
+                                추가 약관에 동의합니다. (비필수)
+                            </label>
+                        </td>
+                    </tr>
+                    {/* ... (이후 코드) ... */}
+                    <tr>
+                        <button
+                            className="sbtn"
+                            onClick={handleSubmit}
+                            disabled={!agreeTerms || !agreePrivacy}
+                        >
+                            가입하기
+                        </button>
+                    </tr>
+                </div>
+            </div>
+        </>
+    );
+}

@@ -1,0 +1,63 @@
+.universal-move-logo-span-wrap{
+    display: flex;
+    position: relative;
+    width: 100vw;
+}
+
+.universal-move-logo-span{
+    display: flex;
+    position: absolute;
+}
+
+.universal-move-logo-span ul{
+    display: flex;
+}
+.universal-move-logo-span img{
+    display: block;
+}
+.universal-move-logo-span ul li{
+    margin-top: 70px;
+    width: 300px;
+    margin: 0 5px;
+}
+.universal-move-logo-span ul li img{
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.block{
+    height: 300px;
+}
+
+@media screen and (max-width:900px) {
+    .universal-move-logo-span ul li{
+        width: 280px;
+        margin-top: 20px;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .universal-move-logo-span ul li{
+        width: 240px;
+        margin-top: 10px;
+    }
+    .block{
+        margin-bottom: 10px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .universal-move-logo-span ul li{
+        width: 165px;
+        margin-top: 0px;
+    }
+
+    .block{
+        margin-bottom: 0;
+        height: 150px;
+    }
+    
+}
